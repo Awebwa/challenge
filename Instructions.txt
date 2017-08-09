@@ -1,0 +1,45 @@
+CAMPANGO PYTHON CHALLENGE
+====================================================
+A: Configure Environment
+
+1) Create a folder on your PC where the content should be placed. 
+2) Paste the folder 'cdata' and the two files: app.py and test.py directly under the directory you created
+3) use CLI and navigate the folder you creade 
+4) create flask virtual environment using this command >python -m venv flask
+5) At this point, you should see another folder called 'flask' created
+6) using CLI navigate to that flask folder to the level of scripts ( flask\scripts)
+7) Execute the command > pip install flask (this will install flask)
+8) while at the same level as above install requets mode using >pip install requests
+9) At the level of flask\scripts as in 7 above, activate flask with the command >activate 
+10) when flask is running, your command prompt on the CLI  should start with <flask> ........
+11) navigate backwords to the content folder you created (should be 2 steps ie dc ../.. will do)
+12) now run the application using >python app.py
+
+Note that some of the modules have directives or references to the folder you created. 
+Please examine the documentation in test.py and app.py to adjust these.
+
+B: Key dependecies
+
+1) Code has been writen using python 3.6
+2) A running flask virtual environment
+3) requests module being used by the test file. 
+Other than standard libraries, much of the code is originally authored
+
+
+C: Some Semantic interpretation of the challenge
+
+- The purpose of the glass record is to record favourites
+- Favourites can also be queried from the review 
+
+D: Technical decisions
+
+- separation of concern especially data handling using database technology
+- although all other http verbs could be used, POST and GET has been prefered for purpose of interraction
+- JSON is being used to represent payloads and therefore requets are restricted to json. response however can be anything.
+to establish a contract at this momment, user applications can traverse tupples or conveniently conver the tupples.
+- Not much validation is included in the code but this can easily be implemented at any level (application level and database level)
+
+E: Lastly
+
+This code is intended for demonstration purpose only. 
+Code is provided as is in the interest of time.
